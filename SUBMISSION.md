@@ -2,6 +2,7 @@
 
 ## Members
 | Name | Matric number | Email |
+| --- | --- | --- |
 | VIDUSH GUPTA | U2523505J | VIDUSH001@E.NTU.EDU.SG |
 | RAMESH BABU RISHI | U2523684K | RISHI008@E.NTU.EDU.SG |
 | SHIVAKUMAR ARAVIND  | U2521979G | ARAVIND016@E.NTU.EDU.SG |
@@ -32,7 +33,7 @@ sideways and oscillate frame to frame; the steering is now limited to what
 12 m/s² of lateral acceleration needs at the current speed.
 
 What did not work, or was rejected:
- **A shorter lookahead at low speed** (to stop pure pursuit cutting the hairpins).
+- **A shorter lookahead at low speed** (to stop pure pursuit cutting the hairpins).
   It made the car oscillate at low speed.
 - **A higher steering cap.** It let the car into the open area left of the diagonal
   wall.
