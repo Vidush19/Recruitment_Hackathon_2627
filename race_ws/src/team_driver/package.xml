@@ -8,8 +8,8 @@
   -->
   <name>team_driver</name>
   <version>0.1.0</version>
-  <description>TODO: your team name and a one-line description of your approach.</description>
-  <maintainer email="you@e.ntu.edu.sg">Your Team</maintainer>
+  <description>Pure pursuit on a minimum-curvature racing line generated from the map, with a speed profile and a measured-model speed controller.</description>
+  <maintainer email="VIDUSH001@E.NTU.EDU.SG">Chitti 3.0</maintainer>
   <license>MIT</license>
 
   <exec_depend>rclpy</exec_depend>
@@ -19,6 +19,7 @@
   <exec_depend>visualization_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
   <exec_depend>ros2launch</exec_depend>
 
   <test_depend>ament_copyright</test_depend>

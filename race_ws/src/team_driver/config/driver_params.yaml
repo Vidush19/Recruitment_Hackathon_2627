@@ -1,25 +1,12 @@
-# Your tuning lives here. Loaded with:
+# Overrides for experiments. A judged run passes NO parameter file
+# (`ros2 run team_driver driver`), so the defaults declared in driver.py are
+# what races - move anything you settle on there.
+#
 #   ros2 run team_driver driver --ros-args --params-file \
 #       /hackathon/race_ws/src/team_driver/config/driver_params.yaml
-#
-# or in an evaluation run:
-#   ros2 launch roboracer_referee evaluate.launch.py team:=my_team \
-#       driver_params:=/hackathon/race_ws/src/team_driver/config/driver_params.yaml
-#
-# Keeping the numbers out of the code means you can sweep them without
-# rebuilding, which is the fastest way to find lap time early on. Declare a
-# parameter in driver.py and it can be set here.
-#
-# The two below are all the template needs, because the template does not
-# drive (see driver.py). Expect to replace them entirely.
+#   ./scripts/evaluate.sh --team t --driver-params \
+#       /hackathon/race_ws/src/team_driver/config/driver_params.yaml
 
 driver:
   ros__parameters:
-    # AutoDRIVE takes a normalised throttle in [-1, 1], not a target speed.
-    # This one is open loop: the car goes as fast as 0.12 throttle takes it,
-    # which is different on the straight and up against the limit in a corner.
-    # Turning a target speed into a throttle is a control problem you own -
-    # see docs/04-algorithms.md §4.1.
-    crawl_throttle: 0.12
-
-    max_range: 10.0           # [m] clip the scan here; the LiDAR reaches 10 m
+    speed_scale: 1.0

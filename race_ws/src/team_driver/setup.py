@@ -17,9 +17,9 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Your Team',
-    maintainer_email='you@e.ntu.edu.sg',
-    description='Hackathon entry.',
+    maintainer='Chitti 3.0',
+    maintainer_email='VIDUSH001@E.NTU.EDU.SG',
+    description='Racing-line follower: min-curvature line, speed profile, pure pursuit.',
     license='MIT',
     tests_require=['pytest'],
     entry_points={
@@ -27,6 +27,7 @@ setup(
             # Keep this entry: the judges run `ros2 run team_driver driver`.
             # Add more of your own alongside it if you like.
             'driver = team_driver.driver:main',
+            'make_raceline = team_driver.raceline:main',
         ],
     },
 )
